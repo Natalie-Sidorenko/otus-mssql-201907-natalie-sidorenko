@@ -1,0 +1,8 @@
+Название проекта: YouTube
+Используемые базы данных: MySQL (реляционная) + Vitesse - database clustering system for horizontal scaling of MySQL.
+Количество серверов БД: я не нашла, здесь люди сами задаются этим вопросом:
+https://www.quora.com/unanswered/How-many-servers-does-YouTube-have
+http://highscalability.com/youtube-architecture
+http://mysqldatabaseadministration.blogspot.com/2007/04/youtube-and-mysql.html
+Ссылка на источник:
+https://www.mysql.com/customers/view/?id=750
