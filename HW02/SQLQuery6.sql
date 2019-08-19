@@ -1,4 +1,4 @@
-/****** 6. ¬се ид и имена клиентов и их контактные телефоны, которые покупали товар Chocolate frogs 250g  ******/
+/****** 6. Vse id i imena klientov i ix kontaktnye telefony, kotorye pokupali tovar Chocolate frogs 250g  ******/
 SELECT o.[CustomerID]
 	  ,c.[CustomerName]
 	  ,c.[PhoneNumber]

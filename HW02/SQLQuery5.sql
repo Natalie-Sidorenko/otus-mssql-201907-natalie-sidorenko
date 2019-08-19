@@ -1,4 +1,4 @@
-/****** 5. 10 последних по дате продаж с именем клиента и именем сотрудника, который оформил заказ. ******/
+/****** 5. 10 poslednix po date prodazh s imenem klienta i imenem sotrudnika, kotoryj oformil zakaz. ******/
 SELECT TOP (10) o.[OrderID]
       ,c.[CustomerName]
       ,p.[FullName] AS Salesperson

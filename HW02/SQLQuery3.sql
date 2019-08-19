@@ -1,7 +1,7 @@
-/****** 3. Продажи с названием месяца, в котором была продажа, номером квартала, к которому относится продажа, 
-включите также к какой трети года относится дата - каждая треть по 4 месяца,
-дата забора заказа должна быть задана, с ценой товара более 100$ либо количество единиц товара более 20.
-Соритровка должна быть по номеру квартала, трети года, дате продажи. ******/
+/****** 3. Prodazhi s nazvaniem mesyaca, v kotorom byla prodazha, nomerom kvartala, k kotoromu otnositsya prodazha, 
+vklyuchite takzhe k kakoj treti goda otnositsya data - kazhdaya tret' po 4 mesyaca,
+data zabora zakaza dolzhna byt' zadana, s cenoj tovara bolee 100$ libo kolichestvo edinic tovara bolee 20.
+Soritrovka dolzhna byt' po nomeru kvartala, treti goda, date prodazhi. ******/
 SELECT l.[OrderLineID]
       ,l.[OrderID]
 	  ,o.[OrderDate]
@@ -21,9 +21,9 @@ SELECT l.[OrderLineID]
   ON l.[OrderID]=o.[OrderID]
   WHERE NOT l.[PickingCompletedWhen] IS NULL AND (l.[UnitPrice]>100 OR[Quantity]>20)
   ORDER BY --[Year], 
-  [Quarter], [ThirdOfYear], o.[OrderDate] --Я бы добавила сюда ещё сортировку сначала по году, но прямо не требуется...
+  [Quarter], [ThirdOfYear], o.[OrderDate] --YA by dobavila syuda eshchyo sortirovku snachala po godu, no pryamo ne trebuetsya...
 
-  /****** Добавьте вариант этого запроса с постраничной выборкой пропустив первую 1000 и отобразив следующие 100 записей. ******/
+  /****** Dobav'te variant e'togo zaprosa s postranichnoj vyborkoj propustiv pervuyu 1000 i otobraziv sleduyushchie 100 zapisej. ******/
   SELECT l.[OrderLineID]
       ,l.[OrderID]
 	  ,o.[OrderDate]

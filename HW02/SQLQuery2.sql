@@ -1,4 +1,4 @@
-/****** 2. Поставщиков, у которых не было сделано ни одного заказа  ******/
+/****** 2. Postavshchikov, u kotoryx ne bylo sdelano ni odnogo zakaza  ******/
 SELECT s.[SupplierID]
       ,s.[SupplierName]
       ,s.[SupplierCategoryID]
